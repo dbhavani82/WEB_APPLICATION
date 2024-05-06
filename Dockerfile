@@ -1,2 +1,4 @@
 FROM httpd
-copy . /usrs/local/apache2/htdocs/
+copy index.html  /var/www/html/
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+
