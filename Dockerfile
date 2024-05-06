@@ -1,3 +1,3 @@
 FROM httpd
-copy index.html  /var/www/html/
-CMD ["/user/sbin/httpd", "-D", "FOREGROUND"]
+copy index.html  /user/local/apache2/htdocs/
+
